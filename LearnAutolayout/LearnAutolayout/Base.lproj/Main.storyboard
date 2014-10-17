@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGE-uH-4Ch">
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="140" translatesAutoresizingMaskIntoConstraints="NO" id="lGE-uH-4Ch" userLabel="TopView1">
                                 <rect key="frame" x="19" y="13" width="260" height="160"/>
                                 <color key="backgroundColor" red="0.70463669658639727" green="0.76668609226354012" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -26,17 +27,7 @@
                                     <rect key="frame" x="27" y="13" width="310" height="200"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-Pq-zhZ">
-                                <rect key="frame" x="421" y="222" width="160" height="160"/>
-                                <color key="backgroundColor" red="1" green="0.8773091806199611" blue="0.6939226622286494" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="562" y="220" width="200" height="133"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="562" y="287" width="200" height="199"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFF-E4-b8f">
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="140" translatesAutoresizingMaskIntoConstraints="NO" id="fFF-E4-b8f" userLabel="TopView2">
                                 <rect key="frame" x="321" y="13" width="260" height="160"/>
                                 <color key="backgroundColor" red="0.70463669659999995" green="0.76668609229999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -46,17 +37,7 @@
                                     <rect key="frame" x="452" y="13" width="310" height="200"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-D0-VRg">
-                                <rect key="frame" x="221" y="222" width="160" height="160"/>
-                                <color key="backgroundColor" red="1" green="0.8773091806199611" blue="0.6939226622286494" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="220" width="199" height="133"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="287" width="199" height="199"/>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-gS-fot">
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-gS-fot" userLabel="BottomView">
                                 <rect key="frame" x="19" y="427" width="562" height="160"/>
                                 <color key="backgroundColor" red="1" green="0.63876894385561167" blue="0.21288442050158618" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -66,8 +47,8 @@
                                     <rect key="frame" x="27" y="560" width="739" height="200"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1S2-B1-VkP">
-                                <rect key="frame" x="19" y="222" width="160" height="160"/>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="1S2-B1-VkP" userLabel="MiddelView1">
+                                <rect key="frame" x="19" y="222" width="161" height="160"/>
                                 <color key="backgroundColor" red="1" green="0.8773091806199611" blue="0.6939226622286494" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="34" y="220" width="200" height="133"/>
@@ -76,8 +57,58 @@
                                     <rect key="frame" x="34" y="287" width="200" height="199"/>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-D0-VRg" userLabel="MiddelView2">
+                                <rect key="frame" x="220" y="222" width="160" height="160"/>
+                                <color key="backgroundColor" red="1" green="0.8773091806199611" blue="0.6939226622286494" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="pJI-EV-u2q"/>
+                                </constraints>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="301" y="220" width="199" height="133"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="301" y="287" width="199" height="199"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-Pq-zhZ" userLabel="MiddelView3">
+                                <rect key="frame" x="420" y="222" width="161" height="160"/>
+                                <color key="backgroundColor" red="1" green="0.8773091806199611" blue="0.6939226622286494" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="562" y="220" width="200" height="133"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="562" y="287" width="200" height="199"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1qC-gS-fot" secondAttribute="trailing" constant="3" id="0n6-Y6-cOD"/>
+                            <constraint firstItem="DAz-D0-VRg" firstAttribute="leading" secondItem="lGE-uH-4Ch" secondAttribute="trailing" constant="-59" id="8QM-bu-Abr"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="top" secondItem="fFF-E4-b8f" secondAttribute="bottom" constant="49" id="9n9-oe-jhi"/>
+                            <constraint firstItem="DAz-D0-VRg" firstAttribute="top" secondItem="fFF-E4-b8f" secondAttribute="bottom" constant="49" id="AIC-om-a1q"/>
+                            <constraint firstItem="fFF-E4-b8f" firstAttribute="leading" secondItem="lGE-uH-4Ch" secondAttribute="trailing" constant="42" id="Bah-Et-qYS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fFF-E4-b8f" secondAttribute="trailing" constant="3" id="E8F-IC-XND"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="trailing" secondItem="1qC-gS-fot" secondAttribute="trailing" id="IdE-2S-Mm4"/>
+                            <constraint firstItem="1qC-gS-fot" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="KCN-OW-IqU"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="leading" secondItem="DAz-D0-VRg" secondAttribute="trailing" constant="40" id="KNb-7I-M6m"/>
+                            <constraint firstItem="lGE-uH-4Ch" firstAttribute="width" secondItem="fFF-E4-b8f" secondAttribute="width" id="KWF-pT-x38"/>
+                            <constraint firstItem="1S2-B1-VkP" firstAttribute="top" secondItem="lGE-uH-4Ch" secondAttribute="bottom" constant="49" id="OP2-jF-Zmj"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="height" secondItem="fFF-E4-b8f" secondAttribute="height" id="Pfj-cs-6Eu"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="height" secondItem="1qC-gS-fot" secondAttribute="height" id="PpG-pL-Ee1"/>
+                            <constraint firstItem="fFF-E4-b8f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-7" id="ZWu-ni-Eds"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="height" secondItem="1S2-B1-VkP" secondAttribute="height" id="dOM-ca-YLo"/>
+                            <constraint firstItem="1qC-gS-fot" firstAttribute="top" secondItem="1S2-B1-VkP" secondAttribute="bottom" constant="45" id="glz-cR-BMe"/>
+                            <constraint firstItem="lGE-uH-4Ch" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-7" id="nak-eY-Yaq"/>
+                            <constraint firstItem="1qC-gS-fot" firstAttribute="top" secondItem="DAz-D0-VRg" secondAttribute="bottom" constant="45" id="qOL-yD-J2X"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="height" secondItem="lGE-uH-4Ch" secondAttribute="height" id="rVD-uO-Xso"/>
+                            <constraint firstItem="lGE-uH-4Ch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="rWa-ht-Hvy"/>
+                            <constraint firstItem="1S2-B1-VkP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="sla-nM-TD6"/>
+                            <constraint firstItem="DAz-D0-VRg" firstAttribute="leading" secondItem="1S2-B1-VkP" secondAttribute="trailing" constant="40" id="xAK-sm-SG0"/>
+                            <constraint firstItem="1qC-gS-fot" firstAttribute="top" secondItem="Hca-Pq-zhZ" secondAttribute="bottom" constant="45" id="yel-UE-dJR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1qC-gS-fot" secondAttribute="bottom" constant="13" id="ymi-kc-45R"/>
+                            <constraint firstItem="Hca-Pq-zhZ" firstAttribute="height" secondItem="DAz-D0-VRg" secondAttribute="height" id="z0L-rB-ZCf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
